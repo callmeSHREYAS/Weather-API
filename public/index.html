@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #6dd5fa, #2980b9);
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    input {
+      padding: 12px 15px;
+      width: 250px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      outline: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    button {
+      padding: 12px 20px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 25px;
+      background: #ffeb3b;
+      color: #333;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+    }
+
+    button:hover {
+      background: #f1d600;
+      transform: scale(1.05);
+    }
+
+    #result {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 15px 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      display: inline-block;
+      min-width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <h1>What's the Weather?</h1>
+  <input type="text" id="cityInput" placeholder="Enter city (e.g., Tokyo)">
+  <button onclick="getWeather()">Get Weather</button>
+  <div id="result"></div>
+
+  <script src="script.js">
+    // JS here next
+  </script>
+</body>
+</html>
